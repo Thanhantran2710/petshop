@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - petshop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/petshop.styles.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="top">
+                <div class="left">
+                    <div class="phone m-md-2">
+                        <i class="bi bi-telephone-fill" style="color: gray"></i>+012 345
+                        6789
+                        <i class="bi bi-envelope-fill m-1"
+                           style="color: gray; padding-left: 20px"></i>mail@gmail.com
+                    </div>
+                </div>
+                <div class="right">
+                    <!-- <div class="dn m-md-2">
+                        <a href="" >ĐĂNG NHẬP</a>
+
+                        <a href="">ĐĂNG KÝ</a>
+
+                      </div> -->
+                    <div class="dropdown">
+                        <i class="bi bi-person-circle"
+                           style="color: #f9a392; font-size: 25px"></i><button class="nut_dropdown">Tên Tài Khoản</button>
+                        <div class="noidung_dropdown">
+                            <a href="#">Tài khoản của tôi</a>
+                            <a href="#">Đơn đặt hàng</a>
+                            <a href="#">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle d-flex">
+                <div class="d-flex">
+                    <img src="../images/home1.png"
+                         class="logo"
+                         style="
+              width: 130px;
+              height: 130px;
+              margin-top: -20px;
+              margin-left: 90px;
+            "
+                         alt="" />
+                    <h1 style="margin-top: 20px">PET HOUSE</h1>
+                </div>
+                <div class="input-group mb-3 m-md-4" style="width: 500px; height: 50px">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Tìm kiếm..."
+                           aria-label="Recipient's username" />
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="bi bi-search" style="color: #f9a392; font-size: 20px"></i>
+                    </button>
+                </div>
+                <div class="giohang m-md-4 d-flex">
+                    <i class="bi bi-cart" style="color: #f9a392; font-size: 35px"> </i>
+                    <!-- Số lượng sau khi thêm sp vào giỏ hàng -->
+                    <span class="Badge">
+                        4
+                        <span class="u-hiddenVisually"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="menu d-flex">
+                <div>
+                    <ul class="danhmuc">
+                        <li>
+                            <span class="tt"><i class="bi bi-list"></i> DANH MỤC SẢN PHẨM</span>
+                            <ul>
+                                <li>
+                                    <!-- <img src="" alt="" class="imgIcon" /> -->
+                                    <a href="">Chó cưng</a>
+                                    <ul>
+                                        <li><a href="">Thức ăn hạt</a></li>
+                                        <li><a href="">Ăn vặt, bánh thưởng</a></li>
+                                        <li><a href="">Đồ chơi</a></li>
+                                        <li><a href="">Dụng cụ vệ sinh</a></li>
+                                        <li><a href="">Pate, đồ hộp</a></li>
+                                        <li><a href="">Sữa</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- <img src="" alt="" class="imgIcon" /> -->
+
+                                    <a href="">Mèo cưng</a>
+                                    <ul>
+                                        <li><a href="">Thức ăn hạt</a></li>
+                                        <li><a href="">Ăn vặt, bánh thưởng</a></li>
+                                        <li><a href="">Pate, đồ hộp</a></li>
+                                        <li><a href="">Sữa</a></li>
+                                        <li><a href="">Đồ chơi</a></li>
+                                        <li><a href="">Dụng cụ vệ sinh</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- <img src="" alt="" class="imgIcon" /> -->
+
+                                    <a href="">Nhà xinh</a>
+                                    <ul>
+                                        <li><a href="">Giường, nệm</a></li>
+                                        <li><a href="">Lồng chuồng</a></li>
+                                        <li><a href="">Chén ăn</a></li>
+                                        <li><a href="">Bình nước</a></li>
+                                        <li><a href="">Balô, túi xách</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- <img src="" alt="" class="imgIcon" /> -->
+
+                                    <a href="">Làm đẹp</a>
+                                    <ul>
+                                        <li><a href="">Sữa tắm cho chó</a></li>
+                                        <li><a href="">Sữa tắm cho mèo</a></li>
+                                        <li><a href="">Chai xịt khử mùi</a></li>
+                                        <li><a href="">Chăm sóc tai, mắt, miệng</a></li>
+                                        <li><a href="">dụng cụ cắt tỉa</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- <img src="" alt="" class="imgIcon" /> -->
+
+                                    <a href="">Tủ thuốc</a>
+                                    <ul>
+                                        <li><a href="">Vitamin</a></li>
+                                        <li><a href="">Trị viêm da</a></li>
+                                        <li><a href="">Trị ve, ký sinh trùng</a></li>
+                                        <li><a href="">Hỗ trợ khác</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- <img src="" alt="" class="imgIcon" /> -->
+
+                                    <a href="">Thời trang</a>
+                                    <ul>
+                                        <li><a href="">Áo, quần</a></li>
+                                        <li><a href="">Phụ kiện</a></li>
+                                        <li><a href="">Vòng cổ, dậy dắt</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="danhmuc2">
+                        <li><a href="">TRANG CHỦ</a></li>
+                        <li><a href="">GIỚI THIỆU</a></li>
+                        <li><a href="">DỊCH VỤ CHĂM SÓC</a></li>
+                        <li><a href="">TIN TỨC</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
