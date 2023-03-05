@@ -1,0 +1,29 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-register {
+    position: absolute;
+    width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 25px;
+    z-index: 999;
+    padding: 25px;
+    background-color: white;
+}
+
+.bg-register {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    background-image: url('../images/hh.jpg');
+}
+
