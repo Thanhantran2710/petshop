@@ -8,5 +8,9 @@ namespace petshop.Controllers
         {
             return View();
         }
+        public IActionResult ProductDetails()
+        {
+            return View();
+        }
     }
 }
